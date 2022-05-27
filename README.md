@@ -1,2 +1,2 @@
 # Projetos
- Projetos para o curso Blueedtech
+ Projetos sugeridos pelo curso Blueedtech
