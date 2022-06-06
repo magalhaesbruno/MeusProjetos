@@ -11,17 +11,17 @@ let computador = "";
 console.log("Seja bem - vindo!!");
 console.log("1 , 2, 3 e JokenPô!!!");
 while (true) {
-  rodadas = +prompt("Quantas rodadas deseja jogar?");
+  rodadas = +prompt("Quantas rodadas deseja jogar? ");
   vitoriasjogador = 0;
   vitoriaspc = 0;
   empate = 0;
   for (i = 0; i < rodadas; i++) {
-    opção = prompt("Pedra, Papel ou Tesoura?").toLocaleLowerCase();
+    opção = prompt("Pedra, Papel ou Tesoura? ").toLocaleLowerCase();
     escolha = Math.floor(Math.random() * 3);
     computador = jokenpo[escolha];
     while (opção != "pedra" && opção != "tesoura" && opção != "papel") {
       console.log("Opção inválida, digite novamente: ");
-      opção = prompt("Pedra, Papel ou Tesoura?").toLocaleLowerCase();
+      opção = prompt("Pedra, Papel ou Tesoura? ").toLocaleLowerCase();
     }
     if (opção == "pedra" && computador == "tesoura") {
       console.log(`O jogador escolheu ${opção} e o computador ${computador}`);
